@@ -5,7 +5,7 @@ import onClickOutside from 'react-onclickoutside'
 import TetherCity from './TetherCity';
 import HotCity from './HotCity';
 import SearchCity from './SearchCity';
-import reactCityStyle from './react-city.scss';
+// import reactCityStyle from './react-city.scss';
 const WrappedComponent = onClickOutside(HotCity)
 const WrappedComponent2 = onClickOutside(SearchCity)
 
