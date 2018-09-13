@@ -7,7 +7,7 @@ export default class APP extends React.Component {
     super(props);
     this.onChange = this.onChange.bind(this);
     this.state = {
-      value:'2222'
+      value:''
     }
   }
   onChange(value) {
