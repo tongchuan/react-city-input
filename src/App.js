@@ -1,5 +1,5 @@
 import React from "react";
-import styles from './style.scss';
+import './style.scss';
 import City from '../lib/index';
 
 export default class APP extends React.Component {
