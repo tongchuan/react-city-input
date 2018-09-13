@@ -4,11 +4,11 @@
   "description": "",
   "main": "dist/main.js",
   "keywords": [
-    "react-city",
+    "react-city-input",
     "react",
     "react-component"
   ],
-  "author": "BrightChen",
+  "author": "zhangtongchuan",
   "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
