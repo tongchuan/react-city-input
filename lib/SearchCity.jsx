@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import reactCityStyle from './react-city.scss';
+
+// import 'reactCity.css'
 import Data from './Data';
 
 export default class SearchCity extends React.Component {

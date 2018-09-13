@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import Data from './Data';
-import './react-city.scss';
-
+// import './react-city.scss';
+// import 'reactCity.css'
 export default class HotCity extends React.Component {
   constructor(props){
     super(props);
