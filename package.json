@@ -17,7 +17,9 @@
     "build": "cross-env NODE_ENV=production webpack -p",
     "major": "npm version major",
     "minor": "npm version minor",
-    "patch": "npm version patch"
+    "patch": "npm version patch",
+    "adduser": "npm adduser --registry=https://registry.npmjs.org/",
+    "publish": "npm publish"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",
