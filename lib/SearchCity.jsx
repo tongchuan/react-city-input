@@ -32,7 +32,7 @@ export default class SearchCity extends React.Component {
       return null;
     }
     return (
-      <div className={reactCityStyle.SearchCity}>
+      <div className='SearchCity'>
       {data.map((item,index)=>{
         return (<li key={index} onClick={this.setValue.bind(this,item.display)}>{item.display}</li>)
       })}

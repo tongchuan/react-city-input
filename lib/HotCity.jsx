@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import Data from './Data';
-import reactCityStyle from './react-city.scss';
-import "reactCity.css";
+import './react-city.scss';
+
 export default class HotCity extends React.Component {
   constructor(props){
     super(props);
@@ -20,13 +20,13 @@ export default class HotCity extends React.Component {
   }
   render() {
     return (
-      <div className={reactCityStyle.reactCityHot}>
-        <ul className={reactCityStyle.navTabs}>
+      <div className="reactCityHot">
+        <ul className="navTabs">
         {Object.keys(Data).map((item,index)=>{
-          return (<li  className={index===this.state.index ? reactCityStyle.selectedItem : ''} onClick={this.onClickSelected.bind(this,index)} key={index}>{item}</li>)
+          return (<li  className={index===this.state.index ? 'selectedItem' : ''} onClick={this.onClickSelected.bind(this,index)} key={index}>{item}</li>)
         })}
         </ul>
-        <div className={reactCityStyle.panel}>
+        <div className='panel'>
         {Object.keys(Data).map((item,index)=>{
           if(index===this.state.index){
             if(this.state.index===0){
@@ -37,8 +37,8 @@ export default class HotCity extends React.Component {
               return [...item].map((key)=>{
                 return (
                   <div key={key}>
-                    <div className={reactCityStyle.charAt}>{key}</div>
-                    <div className={reactCityStyle.charAtList}>{
+                    <div className='charAt'>{key}</div>
+                    <div className='charAtList'>{
                       Data[item].map((data,dataindex)=>{
                         if(data.group===key){
                           return (<span key={dataindex} onClick={this.setValue.bind(this,data.display)}>{data.display}</span>)

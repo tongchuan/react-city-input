@@ -58,7 +58,8 @@ const commonConfig = merge([{
                 // 对 scss/css 文件的处理
                 test: /\.scss$|\.css$/,
                 loader: [
-                    'style-loader', 'css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]', 'sass-loader', 'postcss-loader'
+                    // 'style-loader', 'css-loader?modules&localIdentName=[name]__[local]-[hash:base64:5]', 'sass-loader', 'postcss-loader'
+                    'style-loader', 'css-loader', 'sass-loader', 'postcss-loader'
                 ],
             }, {
                 test: /\.html$/,
@@ -124,7 +125,7 @@ const commonConfig = merge([{
     ],
     resolve: {
         extensions: [
-            '.js', '.jsx'
+            '.js', '.jsx','.css','.sass'
         ], //后缀名自动补全
         modules: ["libs", path.join(rootDir, "node_modules"), "node_modules"],
     },
@@ -270,7 +271,7 @@ const releaseConfig = merge([{
         filename: "main.js",
         publicPath: '',
         libraryTarget: "umd",
-        library: 'react-city-select',
+        library: 'react-city-input',
     },
     externals: {
         react: 'react',

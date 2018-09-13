@@ -1,0 +1,89 @@
+body{
+  background: #eee;
+}
+.reactCityHot{
+  padding: 10px;
+  font-size: 13px;
+  background: #fff;
+  width: 350px;
+  border: 1px solid #eee;
+}
+.reactCityHot::after{
+  display: block;
+  clear: both;
+  content: ' ';
+}
+.reactCityHot ul, .reactCityHot li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.reactCityHot .navTabs{
+  overflow: auto;
+  
+}
+.reactCityHot .navTabs li{
+  float: left;
+  line-height: 25px;
+  padding: 0 3px;
+  border-bottom: 1px solid #ddd;
+  cursor: pointer;
+}
+.reactCityHot .navTabs li.selectedItem{
+  border-bottom: 1px solid #0000ff;
+}
+.reactCityHot .panel span{
+    display: block;
+    width:58px;
+    font-size: 12px;
+    float: left;
+    text-align: left;
+    line-height: 20px;
+    cursor: pointer;
+    padding: 0 3px;
+}
+.reactCityHot .panel span:hover{
+  background: #0000ff;
+  color: #fff;
+}
+.reactCityHot .charAt{
+  width: 30px;
+  text-align: center;
+  line-height: 20px;
+  float: left;
+}
+.reactCityHot .charAtList{
+  width: 320px;
+  float: left;
+}
+
+
+.SearchCity{
+  border: 1px solid #eee;
+  background: #fff;
+  padding: 5px 0;
+  min-width: 200px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.SearchCity::after{
+    display: block;
+    clear: both;
+    content: ' ';
+  }
+
+.SearchCity ul, .SearchCity li{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+.SearchCity  li{
+  padding: 0 13px;
+  cursor: pointer;
+  line-height: 25px;
+}
+.SearchCity  li:hover{
+  background: #0000ff;
+  color: #fff;
+}

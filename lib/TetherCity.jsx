@@ -9,6 +9,9 @@ export default class TetherCity extends React.Component {
     this._update = this._update.bind(this);
     this._destroy = this._destroy.bind(this);
     this._updateTether = this._updateTether.bind(this);
+    this.disable = this.disable.bind(this);
+    this.enable = this.enable.bind(this);
+    this.position = this.position.bind(this);
   }
   componentDidMount() {
     this._targetNode = ReactDOM.findDOMNode(this);
@@ -32,6 +35,9 @@ export default class TetherCity extends React.Component {
     })
     return firstChild;
   }
+  disable() {this._tether.disable()}
+  enable() { this._tether.enable()}
+  position() {this._tether.position()}
   _update() {
     const { children, renderElementTag, renderElementTo } = this.props
     // console.log(this.props)

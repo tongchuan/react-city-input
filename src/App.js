@@ -15,7 +15,7 @@ export default class APP extends React.Component {
   }
   render() {
     return (
-      <div className="cityddd">
+      <div className="react-city">
       <City 
       disabled={false}
       readonly={false}
